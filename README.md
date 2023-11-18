@@ -55,7 +55,8 @@ python ip2asn_db.py -h
 ```
 *****************************************************
 
-Adding the "s" key to any of the above keys saves the resulting dictionary, in addition to its output in the terminal. 
+Adding the "s" key to any of the above keys saves the resulting dictionary, in addition to its output in the terminal.
+
 Example: 
 ```
 python ip2asn_db.py -cs CZ
