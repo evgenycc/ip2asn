@@ -1,6 +1,8 @@
 # ip2asn
 Two versions of a small script that can be used to select asn information.
 
+The "res" directory contains archives, which must be unpacked before running the script. The size of the files is larger than github allows downloading, so I had to archive them.
+
 The ip2asn.py script searches only by ip, since it uses a json file as the base for the ASN search.
 The ip2asn_db.py script does various selections, which are described below. The base used here is sqlite3.
 
