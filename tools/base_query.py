@@ -53,8 +53,8 @@ def owner_find(owner: str) -> (dict, str):
     conn = sqlite3.connect(Path.cwd() / 'res' / 'ip2asn_v4.db')
     cur = conn.cursor()
     try:
-        select = f"SELECT * FROM ip2asn WHERE owner = ?"
-        cur.execute(select, (owner,))
+        select = f"SELECT * FROM ip2asn WHERE owner LIKE ?"
+        cur.execute(select, [f'%{owner}%'])
         data = cur.fetchall()
         _, asn, c_code, country, owner = data[0]
         cidr = []
